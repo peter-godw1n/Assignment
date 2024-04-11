@@ -1,3 +1,6 @@
+//Write a function called helloworld that returns a string of Hello World!
+//soln
+
 public class HelloWorld{
 public static void main (String[] args){
   System.out.println("Hello world!");
