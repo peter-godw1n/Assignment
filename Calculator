@@ -1,0 +1,19 @@
+public class Calculator {
+    public static void main(String[] args){
+
+
+        int add = 1 + 2;
+        int sub = 10 - 5;
+        int multi = 2 * 2;
+        int div = 10 / 5;
+        int rem =  10 % 3;
+
+        System.out.println(add);
+        System.out.println(sub);
+        System.out.println(multi);
+        System.out.println(div);
+        System.out.println(rem);
+
+
+    }
+}
