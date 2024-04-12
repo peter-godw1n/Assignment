@@ -1,0 +1,9 @@
+public class CountOccurrence {
+    public static void main(String[] args){
+
+        String name = "Sunny";
+
+        System.out.println(name.length());
+
+    }
+}
