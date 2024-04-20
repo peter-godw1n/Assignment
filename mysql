@@ -1,0 +1,72 @@
+
+CREATE TABLE employee (
+	employee_id INT PRIMARY KEY,
+	first_name VARCHAR(30),
+	last_name VARCHAR(30),
+	birth_date DATE,
+	sex VARCHAR(1),
+	salary INT,
+	department_id INT
+);
+
+
+CREATE TABLE department (
+	department_id INT PRIMARY KEY,
+	department_name VARCHAR(30),
+	location_id VARCHAR (30)
+);
+
+
+
+INSERT INTO employee VALUES(102, 'Mike', 'Jim', '1990-02-12', 'M', 50000, 1);
+INSERT INTO employee VALUES(104,'David', 'Porter', '1995-06-23', 'M', 10000, 2);
+INSERT INTO employee VALUES(106, 'Angela','Martin', '1994-08-14','M', 34000, 3);
+INSERT INTO employee VALUES(108, 'Marvel', 'Joe', '1998-03-17', 'F', 10000, 0023);
+INSERT INTO employee VALUES(109,'Kelly', 'Jim', '1965-04-12', 'M',60000, 3003);
+INSERT INTO employee VALUES(105, 'Jonh', 'Mike', '1988-06-11', 'M', 45000, 4003);
+INSERT INTO employee VALUES(100, 'Martha', 'Jim', '1999-08-12', 'F',40000, 4500);
+ 
+
+INSERT INTO department VALUES(1, 'Administration', 1700);
+INSERT INTO department VALUES(2, 'Marketing', 1800);
+INSERT INTO department VALUES(3, 'Purchase', 1700);
+INSERT INTO department VALUES(0023, 'Human resoures', 1500);
+INSERT INTO department VALUES(3003, 'Shipping', 6700);
+INSERT INTO department VALUES(4003, 'IT', 2700);
+INSERT INTO department VALUES(4500, 'Sales', 2500);
+
+SELECT * FROM employee;
+
+SELECT * FROM department;
+
+
+
+SELECT *
+FROM employee, department
+WHERE employee.department_id = department.department_id;
+
+SELECT *
+FROM employee, department
+WHERE employee_id = 102
+LIMIT 1;
+
+INSERT INTO employee VALUES(8, 'Josh', 'Miller', '1998-09-11', 'M', 46000, 8900);
+INSERT INTO department VALUES(8, 'Colletor', 8900);
+
+UPDATE employee 
+SET salary = 200000
+WHERE salary = 50000;
+
+DELETE FROM employee
+WHERE employee_id = 8 and department_id = 8;
+
+
+
+
+
+
+
+
+
+
+
