@@ -58,7 +58,7 @@ SET salary = 200000
 WHERE employee_id = 102;
 
 DELETE FROM employee
-WHERE employee_id = 8 and department_id = 8;
+WHERE employee_id = 8 and department_id = 8900;
 
 
 
